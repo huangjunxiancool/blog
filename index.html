@@ -74,6 +74,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-群晖搭建Hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/11/群晖搭建Hexo博客/" class="article-date">
+  <time datetime="2018-06-11T14:22:05.000Z" itemprop="datePublished">2018-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/11/群晖搭建Hexo博客/">群晖搭建Hexo博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在套件中心中提前安装好以下插件：</p>
+<ol>
+<li>Node.js v8</li>
+<li>Git Server</li>
+<li>Web Station</li>
+</ol>
+<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><ol>
+<li><p>安装 hexo-cli</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>建站过程</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd XX/web （进入Web Station的网站根目录）</span><br><span class="line">$ mkdir blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置 _config.yml</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 那一缕尘心 （博客名）</span><br><span class="line">subtitle: 明镜念尘境，沉心思道韵！（子主题）</span><br><span class="line">description: 个人博客 编程 学习 写作 生活 swordshake （描述）</span><br><span class="line">keywords: 个人博客 编程 学习 写作 生活 swordshake (关键字)</span><br><span class="line">author: swordshake (作者）</span><br><span class="line">language: zh-Hans （中文语言）</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">url: https://huangjunxiancool.github.io/blog (博客地址)</span><br><span class="line">root: /blog （相对子目录）</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">deploy: (关联github，用户后续推送静态网站至github)</span><br><span class="line"> type: git</span><br><span class="line"> repo: https://github.com/huangjunxiancool/blog.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载主题</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes</span><br><span class="line">$ git clone https://github.com/huangjunxiancool/hexo-theme-cafe.git cafe</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.swordshake.com:8443/2018/06/11/群晖搭建Hexo博客/" data-id="cjiaexwup0001jyvdj2qhdkwc" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/群晖NAS/">群晖NAS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/11/hello-world/" class="article-date">
@@ -111,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.swordshake.com:8443/2018/06/11/hello-world/" data-id="cjiabvmdb0000n1vd679o96ii" class="article-share-link">分享</a>
+      <a data-url="https://blog.swordshake.com:8443/2018/06/11/hello-world/" data-id="cjiaexwub0000jyvdtn8ojnjd" class="article-share-link">分享</a>
       
       
       
@@ -157,12 +218,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title tagcloud">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 14px;">Hexo</a> <a href="/tags/博客/" style="font-size: 14px;">博客</a> <a href="/tags/群晖NAS/" style="font-size: 14px;">群晖NAS</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title recent-posts">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/06/11/群晖搭建Hexo博客/">群晖搭建Hexo博客</a>
+          </li>
         
           <li>
             <a href="/2018/06/11/hello-world/">Hello World</a>
@@ -177,7 +249,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -207,7 +279,7 @@
   <div class="widget-wrap">
     <h3 class="follow-title ">WeChat</h3>
     <div class="widget wechat-widget">
-        <img src="https://huangjunxiancool.github.io/blog/images/qrcode_swordshake.jpg" alt="扫码关注" width="250"/>
+        <img src="/images/qrcode_swordshake.jpg" alt="扫码关注" width="250"/>
     </div>
   </div>
 

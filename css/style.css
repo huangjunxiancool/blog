@@ -739,7 +739,9 @@ a.article-title:hover {
   margin-right: 10px;
 }
 .article-tag-list-link:before {
-  content: "#";
+  content: "\f02b";
+  font-family: FontAwesome;
+  padding-right: 2px;
 }
 .article-comment-link {
   float: right;
