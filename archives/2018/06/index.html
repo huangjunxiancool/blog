@@ -20,7 +20,7 @@
     <link rel="alternate" href="/atom.xml" title="那一缕尘心" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="[object Object]">
   
   
     
@@ -237,6 +237,22 @@ window.onload = function() {
 
 <!-- author:forvoid begin -->
 <!-- author:forvoid begin -->
+
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> 
+  <script>
+  var gitment = new Gitment({
+    // id: '页面 ID', // 可选。默认为 location.href
+    owner: 'huangjunxiancool',
+    repo: 'https://github.com/huangjunxiancool/blogComments.git',
+    oauth: {
+    client_id: 'b712bc6bb4bbe4b04750',
+    client_secret: 'a061124a03f3388b425dc886e8ddc522d0e5fc90',
+    }
+  })
+  gitment.render(document.getElementById("gitment_comments"))
+</script>
+
 
 <!-- author:forvoid end -->
 
