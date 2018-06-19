@@ -5,23 +5,25 @@
   
   <title>群晖搭建Hexo博客 | 那一缕尘心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm ins">
+  <meta name="description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1$ npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm i">
 <meta name="keywords" content="群晖NAS,Hexo,博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="群晖搭建Hexo博客">
 <meta property="og:url" content="https://blog.swordshake.com:8443/2018/06/11/群晖搭建Hexo博客/index.html">
 <meta property="og:site_name" content="那一缕尘心">
-<meta property="og:description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm ins">
+<meta property="og:description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1$ npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-11T14:51:32.145Z">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/19/96943e2823eb2a33.png">
+<meta property="og:updated_time" content="2018-06-19T11:01:44.032Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="群晖搭建Hexo博客">
-<meta name="twitter:description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm ins">
+<meta name="twitter:description" content="准备工作在套件中心中提前安装好以下插件：  Node.js v8 Git Server Web Station  安装过程 安装 hexo-cli  1$ npm install -g hexo-cli  建站过程  123456$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm i">
+<meta name="twitter:image" content="http://www.wailian.work/images/2018/06/19/96943e2823eb2a33.png">
   
     <link rel="alternate" href="/atom.xml" title="那一缕尘心" type="application/atom+xml">
   
   
-    <link rel="icon" href="[object Object]">
+    <link rel="icon" href="/images/favicon-small.jpg">
   
   
     
@@ -105,22 +107,43 @@
 </ol>
 <h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><ol>
 <li><p>安装 hexo-cli</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>建站过程</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ cd XX/web （进入Web Station的网站根目录）</span><br><span class="line">$ mkdir blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd XX/web （进入Web Station的网站根目录）</span><br><span class="line"><span class="meta">$</span> mkdir blog</span><br><span class="line"><span class="meta">$</span> cd blog</span><br><span class="line"><span class="meta">$</span> hexo init</span><br><span class="line"><span class="meta">$</span> npm install</span><br><span class="line"><span class="meta">$</span> npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>配置 _config.yml</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 那一缕尘心 （博客名）</span><br><span class="line">subtitle: 明镜念尘境，沉心思道韵！（子主题）</span><br><span class="line">description: 个人博客 编程 学习 写作 生活 swordshake （描述）</span><br><span class="line">keywords: 个人博客 编程 学习 写作 生活 swordshake (关键字)</span><br><span class="line">author: swordshake (作者）</span><br><span class="line">language: zh-Hans （中文语言）</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">url: https://huangjunxiancool.github.io/blog (博客地址)</span><br><span class="line">root: /blog （相对子目录）</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">deploy: (关联github，用户后续推送静态网站至github)</span><br><span class="line"> type: git</span><br><span class="line"> repo: https://github.com/huangjunxiancool/blog.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">那一缕尘心</span> <span class="string">（博客名）</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">明镜念尘境，沉心思道韵！（子主题）</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">个人博客</span> <span class="string">编程</span> <span class="string">学习</span> <span class="string">写作</span> <span class="string">生活</span> <span class="string">swordshake</span> <span class="string">（描述）</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">个人博客</span> <span class="string">编程</span> <span class="string">学习</span> <span class="string">写作</span> <span class="string">生活</span> <span class="string">swordshake</span> <span class="string">(关键字)</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">swordshake</span> <span class="string">(作者）</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span> <span class="string">（中文语言）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">url:</span> <span class="attr">https://huangjunxiancool.github.io/blog</span> <span class="string">(博客地址)</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/blog</span> <span class="string">（相对子目录）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="attr">deploy:</span> <span class="string">(关联github，用户后续推送静态网站至github)</span></span><br><span class="line"><span class="attr"> type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr"> repo:</span> <span class="attr">https://github.com/huangjunxiancool/blog.git</span></span><br><span class="line"><span class="attr"> branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 </li>
+<li><p>linux 配置永久 github 账号</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 先cd到根目录，执行git config --global credential.helper store命令</span><br><span class="line"><span class="meta">$</span> git config --global credential.helper store</span><br><span class="line"><span class="meta">#</span> 执行之后会在 .gitconfig 文件中多 credential 项</span><br><span class="line">[user]</span><br><span class="line">        name = 天明</span><br><span class="line">        email = xxxx@xxxx.com</span><br><span class="line">[credential]</span><br><span class="line">        helper = store</span><br><span class="line"><span class="meta">#</span> 之后cd到项目目录，执行git pull命令，会提示输入账号密码。输完这一次以后就不再需要，并且会在根目录生成一个.git-credentials文件</span><br><span class="line"><span class="meta">$</span> cat .git-credentials</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="5">
 <li><p>下载主题</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes</span><br><span class="line">$ git clone https://github.com/huangjunxiancool/hexo-theme-cafe.git cafe</span><br></pre></td></tr></table></figure></li>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd themes</span><br><span class="line"><span class="meta">$</span> git clone https://github.com/huangjunxiancool/hexo-theme-cafe.git cafe</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>写文章</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new [layout] &lt;title&gt; # layout:drafet/page/post 默认为 post，</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译发布</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo g # 编译</span><br><span class="line"><span class="meta">$</span> hexo d # 发布到github</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="站点发布"><a href="#站点发布" class="headerlink" title="站点发布"></a>站点发布</h3><ol>
+<li><p>调试模式</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo s //启用调试模式，默认地址为当前机器 ip:4000</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过 Web Station 进行发布</p>
+<p>打开 Web Station -&gt; 虚拟主机 -&gt; 新增 -&gt; 填写配置，根据个人需要选择协议和端口好即可。</p>
+<p><img src="http://www.wailian.work/images/2018/06/19/96943e2823eb2a33.png" alt="96943e2823eb2a33.png"></p>
+</li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.swordshake.com:8443/2018/06/11/群晖搭建Hexo博客/" data-id="cjikc5xnr0001jfvdrz2npmdc" class="article-share-link">分享</a>
+      <a data-url="https://blog.swordshake.com:8443/2018/06/11/群晖搭建Hexo博客/" data-id="cjikc8nzl000167vdmiq67h4p" class="article-share-link">分享</a>
       
       
       
@@ -215,7 +238,7 @@
       
         <strong class="toc-title">文章目录</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装过程"><span class="toc-number">2.</span> <span class="toc-text">安装过程</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装过程"><span class="toc-number">2.</span> <span class="toc-text">安装过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#站点发布"><span class="toc-number">2.1.</span> <span class="toc-text">站点发布</span></a></li></ol></li></ol>
           </div>
       </div>
     </div>
@@ -274,7 +297,7 @@ window.onload = function() {
   });
 }
 </script>
-      
+    <!--  
 
   
     <script>
@@ -288,7 +311,7 @@ window.onload = function() {
     <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
     
 
-  
+  -->
 
 
 
@@ -303,9 +326,9 @@ window.onload = function() {
   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> 
   <script>
   var gitment = new Gitment({
-    // id: '页面 ID', // 可选。默认为 location.href
+    id: '群晖搭建Hexo博客', // 可选。默认为 location.href
     owner: 'huangjunxiancool',
-    repo: 'https://github.com/huangjunxiancool/blogComments.git',
+    repo: 'blogComments',
     oauth: {
     client_id: 'b712bc6bb4bbe4b04750',
     client_secret: 'a061124a03f3388b425dc886e8ddc522d0e5fc90',
@@ -339,7 +362,7 @@ window.onload = function() {
         }
       })
     </script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
