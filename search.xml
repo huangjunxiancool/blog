@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[群晖搭建Hexo博客]]></title>
+    <url>%2F2018%2F06%2F11%2F%E7%BE%A4%E6%99%96%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[准备工作在套件中心中提前安装好以下插件： Node.js v8 Git Server Web Station 安装过程 安装 hexo-cli 1$ npm install -g hexo-cli 建站过程 12345678$ cd XX/web （进入Web Station的网站根目录）$ mkdir blog$ cd blog$ hexo init$ npm install$ npm install hexo-deployer-git --save# 安装搜索插件$ npm install hexo-generator-searchdb --save 配置 _config.yml 123456789101112131415161718192021222324# Sitetitle: 那一缕尘心 （博客名）subtitle: 明镜念尘境，沉心思道韵！（子主题）description: 个人博客 编程 学习 写作 生活 swordshake （描述）keywords: 个人博客 编程 学习 写作 生活 swordshake (关键字)author: swordshake (作者）language: zh-Hans （中文语言）# URLurl: https://huangjunxiancool.github.io/blog (博客地址)root: /blog （相对子目录）# Deploymentdeploy: (关联github，用户后续推送静态网站至github) type: git repo: https://github.com/huangjunxiancool/blog.git branch: master # 搜索页面 search: path: search.xml field: post format: html limit: 10000 linux 配置永久 github 账号 12345678910# 先cd到根目录，执行git config --global credential.helper store命令$ git config --global credential.helper store# 执行之后会在 .gitconfig 文件中多 credential 项[user] name = 天明 email = xxxx@xxxx.com[credential] helper = store# 之后cd到项目目录，执行git pull命令，会提示输入账号密码。输完这一次以后就不再需要，并且会在根目录生成一个.git-credentials文件$ cat .git-credentials 下载主题 12$ cd themes$ git clone https://github.com/huangjunxiancool/hexo-theme-cafe.git cafe 写文章 1$ hexo new [layout] &lt;title&gt; # layout:drafet/page/post 默认为 post， 编译发布 12$ hexo g # 编译$ hexo d # 发布到github 站点发布 调试模式 1$ hexo s //启用调试模式，默认地址为当前机器 ip:4000 通过 Web Station 进行发布 打开 Web Station -&gt; 虚拟主机 -&gt; 新增 -&gt; 填写配置，根据个人需要选择协议和端口好即可。]]></content>
+      <categories>
+        <category>网站搭建</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>群晖NAS</tag>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+</search>
